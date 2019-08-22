@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find National Parks</title>
+</head>
+<body>
+  <h1>National Park Finder</h1>
+  <section>
+    <h2>Search below for National Parks near you!</h2>
+    <form id="js-park-form">
+      <label for="location">Enter your state: </label>
+      <input type="text" id="location" placeholder="Ex. FL" required/>
+      <label for="result-limit">Max results: </label>
+      <input type="number" id="result-limit" value="10" required/>
+    </form>
+    <ul class="js-results hidden">
+      <!--Results list goes here-->
+    </ul>
+  </section>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
